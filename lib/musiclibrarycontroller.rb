@@ -41,7 +41,9 @@ class MusicLibraryController
           list_songs_by_genre
         when 'play_song'
           play_song
-       end
+        else
+          puts "Invalid choice"
+       end #case
     puts "What would you like to do?"
     user_input = gets.strip.downcase
     end #while
